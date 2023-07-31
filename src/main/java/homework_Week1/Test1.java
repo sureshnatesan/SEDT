@@ -1,41 +1,48 @@
 package homework_Week1;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class Test1 {
 
-	@Test
+	//@Test
 	public void testData() {
-		System.out.println(isPalindrome("race a car"));
+		Assert.assertEquals("abcdef",replaceDigits("a1c1e1"));
 	}
 
-	 public boolean isPalindrome(String a) {
-	       String output="";
-			a=a.toLowerCase();
-	        a=a.replaceAll("[^A-Z0-9a-z]","");
-	        for(int i= a.length()-1;i>=0;i--){
-	            output=output+a.charAt(i);
-	        }
+	public String replaceDigits(String s) {
+		for (int i = 1; i < s.length(); i+=2) {
+			int a= Character.getNumericValue(s.charAt(i))+s.charAt(i-1);
+			s=s.replaceFirst(s.charAt(i)+"", (char)a+"");
 
-	        if(a.equals(output)){
-	            return true;
-	        }
-	        return false;
-	    }
-	 
-	 
-	public boolean isPowerOfThree(int n) {
-		int i=0;
-		while(i<=n){
-			if(n==0){
-				return false;
-			}
-			if((Math.pow(3,i++))==n){
-				return true;
-			}
 		}
-		return false;
+		return s;
+	}
+
+	@Test
+	public void testData1() {
+		System.out.println(20%10);
+		//System.out.println(convertToTitle1(702));
+		//System.out.println(convertToTitle(27));
+		//System.out.println(convertToTitle1(27));
+		//System.out.println(702/26);
+	}
+
+	
+	public String convertToTitle(int columnNumber) {
+		String out="";
+		while(columnNumber>0){
+			columnNumber--;
+			char toAdd = (char)((columnNumber % 26) + 65);
+			out=toAdd+out;
+			columnNumber = columnNumber/26;
+		}
+		return out;
 	}
 }
