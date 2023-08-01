@@ -6,7 +6,7 @@ import org.junit.Test;
 public class ExcelSheetColumnTitle {
 	
 
-    /*
+    /*https://leetcode.com/problems/excel-sheet-column-title/
     Pseudo code
     1. use the while loop to iterate  the input
     2. use the % operator to get the reminder and sum with 64 to get the ASCi

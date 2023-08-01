@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class SelfDividingNumbers {
 	
-	/*
+	/*https://leetcode.com/problems/self-dividing-numbers/
 	 * Pseudo code
 	 * 1.create a for loop to iterate the left and right input
 	 * 2. passing the iterator to another method and convert them to string
@@ -38,7 +38,6 @@ public class SelfDividingNumbers {
 				return false;
 			}
 		}
-
 		return status;
 
 	}
