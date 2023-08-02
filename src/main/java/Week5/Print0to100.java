@@ -15,12 +15,16 @@ public class Print0to100 {
 	
 	@Test
 	public void soluction1() {
-		char a='d';
-		for (int i = a-'d'; i < 'e'; i++) {
-			System.out.println(i);
+	
+		for (char i = (char)('d'-'d'); i < 'e'; i++) {
+			System.out.println((int)i);
 		}
 	}
 	
+	
+	/*
+	 * Without using int
+	 */
 	
 
 }
