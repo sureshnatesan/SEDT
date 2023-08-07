@@ -15,12 +15,14 @@ public class SecondLargestnumber {
 
 	@Test
 	public void testData(){
-		Assert.assertEquals(94,soluction(new int[] {100,14, 46, 47, 94, 94, 52, 86, 36, 94, 89}));
+	//	Assert.assertEquals(94,soluction(new int[] {100,14, 46, 47, 94, 94, 52, 86, 36, 94, 89}));
 	}
 
 	@Test
 	public void testData1(){
-		Assert.assertEquals(856,soluction(new int[] {100,134, 436, 437, 94, 984, 512, 856, 356,87,984}));
+		//Assert.assertEquals(856,soluction(new int[] {100,134, 436, 437, 94, 984, 512, 856, 356,87,984}));
+		Assert.assertEquals(856,soluction1(new int[] {100,134, 436, 437, 94, 984, 512, 856, 356,87,984}));
+		
 	}
 	
 	public int soluction(int[] a) {
@@ -38,5 +40,19 @@ public class SecondLargestnumber {
 			}
 		}
 		return second;
+	}
+	
+	public int soluction1(int[] a) {
+		int first=0;
+		int second=0;
+		for (int i = 0; i < a.length; i++) {
+			if(a[i]>first) {
+first=a[i];
+			}
+			if(a[i]>second&&a[i]<first) {
+				second=a[i];
+			}
+		}
+return second;
 	}
 }

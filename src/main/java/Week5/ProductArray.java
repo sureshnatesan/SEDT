@@ -22,6 +22,9 @@ public class ProductArray {
 
 	}
 
+
+
+	
 	public int arraySign(int[] nums) {
 		int sum=nums[0];
 		if(nums.length<2){
@@ -54,5 +57,7 @@ public class ProductArray {
 			return -1;
 		}
 	}
+
+
 
 }

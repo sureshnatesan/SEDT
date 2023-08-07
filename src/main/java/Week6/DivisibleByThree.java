@@ -35,7 +35,6 @@ public class DivisibleByThree {
 				count++;
 			}
 		}
-		
 		if(count>0) {
 			return sum/count;
 		}
