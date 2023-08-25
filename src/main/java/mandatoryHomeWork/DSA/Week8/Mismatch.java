@@ -13,8 +13,8 @@ public class Mismatch {
 	 * 
 	 * Pseudo code
 	 * 1. sort the array, and create a for loop and iterate
-	 * 2. if iterate value is not equal to i return i-1,i in the new array and return
-	 * 
+	 * 2. find the duplicate and assign the value as 0 for duplicate and again sort the input array
+	 * 3. create one more for loop to compare the array value with iteration value;
 	 * 
 	 * 
 	 */
