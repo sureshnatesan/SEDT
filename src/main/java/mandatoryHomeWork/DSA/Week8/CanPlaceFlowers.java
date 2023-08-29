@@ -28,12 +28,10 @@ public class CanPlaceFlowers {
 		int count =0;
 		int sum =0;
 
-		if(flowerbed.length==1) {
+		if(flowerbed.length==1) { //0(1)
 			if(flowerbed[0]==0) {
 		
 					return true;
-		
-			
 			}
 			else if(flowerbed[0]==1&& n==0) {
 				return true;
@@ -43,7 +41,7 @@ public class CanPlaceFlowers {
 			}
 		}
 		
-		if(flowerbed.length>1) {
+		if(flowerbed.length>1) { //0(1)
 			if(flowerbed[0]==0&&flowerbed[1]==0) {
 				sum++;
 				flowerbed[0]=1;
@@ -54,8 +52,9 @@ public class CanPlaceFlowers {
 			}
 		}
 		
-		
-		for(int i=1;i<flowerbed.length-1;i++){
+		// 0,0,1,0,0,0
+		//1,0,1,0,0,1
+		for(int i=1;i<flowerbed.length-1;i++){ //0(n)
 			if(flowerbed[i-1]==0&&flowerbed[i]==0&&flowerbed[i+1]==0){
 				sum++;
 				flowerbed[i]=1;
