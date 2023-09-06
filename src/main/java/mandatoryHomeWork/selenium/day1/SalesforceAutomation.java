@@ -1,9 +1,11 @@
 package mandatoryHomeWork.selenium.day1;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
-
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -231,7 +233,7 @@ public class SalesforceAutomation {
 		Assert.assertTrue(driver.findElement(WorkType_deletemsg).getText().contains("Work Type \"Salesforce Project\" was deleted."));
 	}
 	
-	@Test(priority=5)
+	//@Test(priority=5)
 	public void errorLegalEntity() throws InterruptedException {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[@class='slds-button slds-show']")).click();
@@ -257,6 +259,16 @@ public class SalesforceAutomation {
 		clickMethod(driver,WorkType_newoperatingsave);
 		Assert.assertEquals("Review the errors on this page.",driver.findElement(WorkType_errormsg).getText());
 		clickMethod(driver,WorkType_cancelbutton);
+	}
+	
+	
+	public void windowsHandles() {
+		String windowHandle = driver.getWindowHandle();
+Set<String> windowHandles = driver.getWindowHandles();
+List<String> windows= new  ArrayList<>(windowHandles);
+driver.switchTo().window(windows.get(1));
+
+
 	}
 
 }

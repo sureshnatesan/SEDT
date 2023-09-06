@@ -1,7 +1,9 @@
 package mandatoryHomeWork.DSA.week9;
 
 import org.junit.Test;
-import org.testng.Assert;
+
+import junit.framework.Assert;
+
 
 public class WordFoundInSentences {
 

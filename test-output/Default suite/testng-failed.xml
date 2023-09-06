@@ -6,7 +6,6 @@
       <class name="mandatoryHomeWork.selenium.day1.SalesforceAutomation">
         <methods>
           <include name="setup"/>
-          <include name="errorLegalEntity"/>
           <include name="deleteLegalEntity"/>
           <include name="updateLegalEntity"/>
           <include name="tearDown"/>
