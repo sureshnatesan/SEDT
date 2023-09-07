@@ -17,6 +17,13 @@ public class AapperisbeforB {
 		System.out.println(soluction("aaa"));
 	}
 
+	
+	@Test
+	public void testData1() {
+	float d=2.1545f;
+	System.out.println(d%1.0);
+	}
+
 	public boolean soluction(String s) {
 		
 		if(s.length()<=1) {
