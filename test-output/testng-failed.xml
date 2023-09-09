@@ -3,16 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mandatoryHomeWork.selenium.day1.SalesforceAutomation">
+      <class name="mandatoryHomeWork.selenium.day1.JiraAutomation">
         <methods>
           <include name="setup"/>
-          <include name="deleteLegalEntity"/>
-          <include name="updateLegalEntity"/>
-          <include name="tearDown"/>
-          <include name="EditLegalEntity"/>
-          <include name="createWorkType"/>
         </methods>
-      </class> <!-- mandatoryHomeWork.selenium.day1.SalesforceAutomation -->
+      </class> <!-- mandatoryHomeWork.selenium.day1.JiraAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
