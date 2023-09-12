@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-09T15:49:19 IST" name="Default suite" finished-at="2023-09-09T15:49:45 IST" duration-ms="26366">
+  <suite started-at="2023-09-10T11:04:33 IST" name="Default suite" finished-at="2023-09-10T11:04:33 IST" duration-ms="49">
     <groups>
     </groups>
-    <test started-at="2023-09-09T15:49:19 IST" name="Default test" finished-at="2023-09-09T15:49:45 IST" duration-ms="26366">
-      <class name="mandatoryHomeWork.selenium.day1.JiraAutomation">
-        <test-method signature="setup()[pri:0, instance:mandatoryHomeWork.selenium.day1.JiraAutomation@223191a6]" started-at="2023-09-09T15:49:19 IST" name="setup" finished-at="2023-09-09T15:49:45 IST" duration-ms="26319" status="PASS">
+    <test started-at="2023-09-10T11:04:33 IST" name="Default test" finished-at="2023-09-10T11:04:33 IST" duration-ms="49">
+      <class name="mandatoryHomeWork.DSA.week11.caloriesProblem">
+        <test-method signature="testName()[pri:0, instance:mandatoryHomeWork.DSA.week11.caloriesProblem@49139829]" started-at="2023-09-10T11:04:33 IST" name="testName" finished-at="2023-09-10T11:04:33 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-      </class> <!-- mandatoryHomeWork.selenium.day1.JiraAutomation -->
+        </test-method> <!-- testName -->
+      </class> <!-- mandatoryHomeWork.DSA.week11.caloriesProblem -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
