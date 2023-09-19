@@ -38,32 +38,33 @@ public class BribeLine {
 		minimumBribes(list);
 		
 	}
+	
+	 public static void minimumBribes1(List<Integer> q) {
+		 for(int i=q.size()-1;i>=0;i--) {
+			 
+		 }
+	 }
+		 
+		 
+			
+			
 	 public static void minimumBribes(List<Integer> q) {
-		 
-		 
-		
-		 
+
 		 List<Integer> queue = new ArrayList<>();
 			for(int i=1;i<=q.size();i++) {
 				queue.add(i);
 			}
 		Collections.sort(queue);
-		for(int a=1;a<=q.size();a++) {
-			
-			
-		}
-		
-				
+		for(int a=1;a<=q.size();a++) {	
+		}				
 		 int count=0;
-
          for(int i=q.size()-1;i>=0;i--) {
         	
              for(int j=i-1;j>=0;j--) {
                  if(q.get(i)<q.get(j)) {
                      count++;
                  }
-             }
-             
+             }  
              System.out.println(count);
              //1 2 5 3 4 7 8 6->count
          }
