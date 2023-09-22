@@ -18,6 +18,7 @@ public class SubArrayThreshold {
 	
 	@Test
 	public void testData(){
+		
 		int[] z= {2,2,2,2,5,5,5,8};
 		Assert.assertEquals(3, numOfSubarrays(z,3,4));
 	}

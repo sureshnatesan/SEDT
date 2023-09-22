@@ -29,9 +29,7 @@ public class SlidingWindows {
 	public void testData4(){
 		int a= Integer.MAX_VALUE+Integer.MAX_VALUE;
 		System.out.println(a);
-		//Assert.assertEquals(98, getMaxmium(new int[] {Integer.MIN_VALUE,Integer.MIN_VALUE,-768,9,89,-0},3));
-//System.out.println(getMaxmium(new int[] {Integer.MAX_VALUE,Integer.MAX_VALUE,-768,9,89,-0},3));
-	}
+}
 	
 	
 	//1,3,5,2,7,1
