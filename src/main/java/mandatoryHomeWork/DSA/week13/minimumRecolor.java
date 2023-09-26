@@ -7,9 +7,12 @@ public class minimumRecolor {
 	 * 
 	 * https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/
 	 * Pseudo code
-	 * 1.try to find the maximum consecutive of black
-	 * 2. check if the given K is equals to or than grather than K, if greater than retu 0
-	 * 3. if not meet the condition, replace the w to b and check;
+	 * 1.try to find the count of white in within k size first
+	 * 2. use the minimum operation to find the minvalue of count
+	 * 3. after finding the w count in k size window
+	 * 4. increase one side of window and remove the first pointer size  and check for the W count
+	 * 5. Again use the min operator to find the min value
+	 * Time Complexity 
 	 */
 
 	@Test
@@ -22,20 +25,22 @@ public class minimumRecolor {
 		
 		int left=0;
 		int count=0;
-		int sum=Integer.MIN_VALUE;
-		while(left<blocks.length()-k) {
-			String a=blocks.substring(left, left+k);
-			count=0;
-			for (int i = 0; i < a.length(); i++) {
-				if(a.charAt(i)=='W') {
-					count++;
-				}
+		int minvalue=Integer.MAX_VALUE;
+		while(left<k) {
+			if(blocks.charAt(left++)=='W') {
+				count++;
 			}
-			if(sum<count) {
-				sum=count;
-			}
-			left++;
 		}
-		return count;
+		minvalue=Math.min(minvalue, count);
+		while(left<blocks.length()) {
+			if(blocks.charAt(left-k)=='W') {
+				count--;
+			}
+			if(blocks.charAt(left++)=='W') {
+				count++;
+			}
+			minvalue=Math.min(minvalue, count);
+		}	
+		return minvalue;			
 	}
 }
