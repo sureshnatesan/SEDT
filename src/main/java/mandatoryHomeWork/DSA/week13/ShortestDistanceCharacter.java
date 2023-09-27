@@ -27,15 +27,13 @@ public class ShortestDistanceCharacter {
 	        int left=0;
 	        int right=0;
 	        
-	        while(left<s.length()&&right<s.length()) {
-	        	if(s.charAt(right)!=c) {
-	        		right++;
-	        	}
-	        	else if(left<=right){
-	        		sum[left]=right-left;
-	        		left++;
-	        	}
-	        }
+	      for (int i = 0; i < s.length(); i++) {
+			while(left<s.length()&&right<s.length()) {
+				if(left>=0) {
+					
+				}
+			}
+		}
 	        
 	    
 	      return sum;  
