@@ -24,6 +24,8 @@ public class SingleNumber {
 	public void testData(){
 		int[] a= {2,2,1};
 		System.out.println(singleNumber(a));
+		
+		
 	}
 	public int singleNumber(int[] nums) {
 		Set<Integer> set = new HashSet<>();
