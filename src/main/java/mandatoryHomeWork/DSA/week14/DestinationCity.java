@@ -39,40 +39,4 @@ public class DestinationCity {
 		return "true";
 	}
 
-
-
-	public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) {
-
-		int sum[]= new int[2];
-		int[] count= new int[aliceSizes.length+bobSizes.length];
-		int avg=0;
-		for (int i =0;i<aliceSizes.length;i++){
-			count[i]=aliceSizes[i];
-			avg+=aliceSizes[i];
-
-		}
-		for(int j=aliceSizes.length;j<aliceSizes.length+bobSizes.length;j++){
-			count[j]=bobSizes[j-aliceSizes.length];
-			avg+=bobSizes[j-aliceSizes.length];
-		}
-		int left =0;
-		int right =1;
-		while(left<count.length-1){
-			if(right<count.length  && count[left]+count[right]==avg/2){
-				sum[0]=count[left];
-				sum[1]=count[right];
-				return sum;
-			}
-
-			if(right==count.length){
-				left++;
-				right=left+1;
-			}
-			right++;
-		}
-	}   
-
-}
-
-
 }
