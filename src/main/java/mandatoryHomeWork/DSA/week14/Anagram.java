@@ -62,6 +62,7 @@ public class Anagram {
 				map1.put(s2.charAt(i),-1);
 			}
 		*/	
+			
 			if(map1.get(s2.charAt(i))==0) {
 				map1.remove(s2.charAt(i));
 			}
