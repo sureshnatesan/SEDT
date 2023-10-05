@@ -17,8 +17,8 @@ public class CountNumberConsistentStrings {
 
 	@Test
 	public void testData(){
-		String allowed = "ab";
-		String[] words = {"ad","bd","aaab","baa","badab"};
+		String allowed = "fstqyienx";
+		String[] words = {"n","eeitfns","eqqqsfs","i","feniqis","lhoa","yqyitei","sqtn","kug","z","neqqis"};
 		System.out.println(countConsistentStrings(allowed,words));
 	}
 
@@ -34,7 +34,7 @@ public class CountNumberConsistentStrings {
 			//words[left].toCharArray();
 			for (int i = 0; i < words[left].length(); i++) {
 				if(sum[words[left].charAt(i)-'a']==0) {
-					left++;
+					//left++;
 					break;
 				}
 				if(i==words[left].length()-1) count++;
