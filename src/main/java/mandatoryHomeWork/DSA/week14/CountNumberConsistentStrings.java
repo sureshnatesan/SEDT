@@ -34,7 +34,6 @@ public class CountNumberConsistentStrings {
 			//words[left].toCharArray();
 			for (int i = 0; i < words[left].length(); i++) {
 				if(sum[words[left].charAt(i)-'a']==0) {
-					//left++;
 					break;
 				}
 				if(i==words[left].length()-1) count++;
