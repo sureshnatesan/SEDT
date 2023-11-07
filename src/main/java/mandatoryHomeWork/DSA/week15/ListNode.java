@@ -6,7 +6,7 @@ import java.util.List;
 public class ListNode {
 
 	int val;
-	ListNode next;
+	public ListNode next;
 	ListNode head;
 	ListNode tail;
 	ListNode() { 
